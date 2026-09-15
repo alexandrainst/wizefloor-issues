@@ -42,6 +42,16 @@ body:
       placeholder: Attach files here, or paste a link to a recording.
 
   - type: checkboxes
+    id: environment
+    attributes:
+      label: Production Environment
+      description: Which server environment has the issue been observed on? Select all that apply.
+      options:
+        - label: Production (Stable)
+        - label: Beta
+        - label: Alpha
+
+  - type: checkboxes
     id: platform
     attributes:
       label: Platform
