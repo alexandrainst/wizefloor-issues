@@ -4,33 +4,28 @@ title: "[BUG] "
 labels: []
 assignees: []
 body:
-  - type: dropdown
+  - type: checkboxes
     id: platform
     attributes:
       label: Platform
       description: Which platform has the issue been observed on? Select all that apply.
-      multiple: true
       options:
-        - Web
-        - Windows
-        - Android
-        - Tracking (ATrack)
-    validations:
-      required: true
+        - label: Windows
+        - label: Android
+        - label: Tracking (ATrack)
+        - label: Tracking (LiDAR)
+        - label: Web
 
-  - type: dropdown
+  - type: checkboxes
     id: installation_type
     attributes:
       label: Installation type
       description: Which installation type has the issue been observed on? Select all that apply.
-      multiple: true
       options:
-        - WizeFloor (Ceiling)
-        - WizeFloor Go
-        - WizeFloor Ultra
-        - WizeWall
-    validations:
-      required: true
+        - label: WizeFloor (Ceiling)
+        - label: WizeFloor Go
+        - label: WizeFloor Ultra
+        - label: WizeWall
 
   - type: dropdown
     id: game
@@ -73,7 +68,7 @@ body:
         - The Three Billy Goats Gruff
         - Trails
 
-  - type: textarea
+  - type: input
     id: describe_bug
     attributes:
       label: Describe the bug
@@ -85,11 +80,10 @@ body:
   - type: textarea
     id: reproduce
     attributes:
-      label: To Reproduce
-      description: Steps to reproduce the behavior.
+      label: Steps to reproduce
       placeholder: |
-        1. 
-        2. 
+        1. Start balloon game..
+        2. Pop a balloon..
     validations:
       required: true
 
