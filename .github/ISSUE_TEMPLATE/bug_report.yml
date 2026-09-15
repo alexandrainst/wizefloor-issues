@@ -4,6 +4,33 @@ title: "[BUG] "
 labels: []
 assignees: []
 body:
+
+  - type: input
+    id: describe_bug
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is.
+      placeholder: Describe what happened.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Start balloon game..
+        2. Pop a balloon..
+    validations:
+      required: true
+
+  - type: input
+    id: expected_behavior
+    attributes:
+      label: Expected behavior
+      description: A clear and concise description of what you expected to happen.
+      placeholder: Describe what you expected to happen.
+
   - type: checkboxes
     id: platform
     attributes:
@@ -67,32 +94,6 @@ body:
         - Theme Cards
         - The Three Billy Goats Gruff
         - Trails
-
-  - type: input
-    id: describe_bug
-    attributes:
-      label: Describe the bug
-      description: A clear and concise description of what the bug is.
-      placeholder: Describe what happened.
-    validations:
-      required: true
-
-  - type: textarea
-    id: reproduce
-    attributes:
-      label: Steps to reproduce
-      placeholder: |
-        1. Start balloon game..
-        2. Pop a balloon..
-    validations:
-      required: true
-
-  - type: input
-    id: expected_behavior
-    attributes:
-      label: Expected behavior
-      description: A clear and concise description of what you expected to happen.
-      placeholder: Describe what you expected to happen.
 
   - type: textarea
     id: screenshots
