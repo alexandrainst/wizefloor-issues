@@ -59,6 +59,7 @@ body:
     id: reproduce
     attributes:
       label: Steps to reproduce
+      description: Please also add relevant screenshots/videos as attachment.
       placeholder: |
         1. Start balloon game..
         2. Pop a balloon..
@@ -71,16 +72,6 @@ body:
       label: Expected behavior
       description: A clear and concise description of what you expected to happen.
       placeholder: Describe what you expected to happen.
-
-  - type: textarea
-    id: media
-    attributes:
-      label: Screenshots/videos
-      description: |
-        Drag and drop, paste, or click the bar below the box to attach files.
-        Images (.png, .jpg, .gif, .svg) up to 10 MB, videos (.mp4, .mov, .webm) up to 100 MB.
-        For longer recordings, upload elsewhere and paste a link.
-      placeholder: Attach files here, or paste a link to a recording.
 
   - type: checkboxes
     id: environment
