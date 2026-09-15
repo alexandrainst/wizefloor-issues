@@ -4,7 +4,6 @@ title: "[BUG] "
 labels: []
 assignees: []
 body:
-
   - type: dropdown
     id: platform
     attributes:
@@ -14,15 +13,15 @@ body:
       options:
         - Web
         - Windows
-        - Android        
+        - Android
         - Tracking (ATrack)
     validations:
       required: true
 
   - type: dropdown
-    id: Installation Type
+    id: installation_type
     attributes:
-      label: Platform
+      label: Installation type
       description: Which installation type has the issue been observed on? Select all that apply.
       multiple: true
       options:
@@ -32,7 +31,7 @@ body:
         - WizeWall
     validations:
       required: true
-      
+
   - type: dropdown
     id: game
     attributes:
