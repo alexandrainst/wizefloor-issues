@@ -7,7 +7,7 @@ assignees: []
 body:
 
 type: textarea
-id: describe-bug
+id: describe_bug
 attributes:
 label: Describe the bug
 description: A clear and concise description of what the bug is.
@@ -29,7 +29,7 @@ validations:
 required: true
 
 type: textarea
-id: expected-behavior
+id: expected_behavior
 attributes:
 label: Expected behavior
 description: A clear and concise description of what you expected to happen.
@@ -84,8 +84,8 @@ validations:
 required: true
 
 type: textarea
-id: applies-to
+id: applies_to
 attributes:
 label: Applies to
-description: Which devices, platforms, or modes has the bug been observed on? E.g. "Windows application".
-placeholder: e.g. Windows application, Chrome, iPad, etc.
+description: Which devices, platforms, or modes has the bug been observed on? For example, Windows application.
+placeholder: Windows application, Chrome, iPad, etc.
