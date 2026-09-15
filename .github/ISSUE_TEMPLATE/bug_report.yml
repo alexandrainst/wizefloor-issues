@@ -5,6 +5,47 @@ labels: ["bug"]
 assignees: []
 body:
 
+  - type: dropdown
+    id: game
+    attributes:
+      label: Game
+      description: Which game(s) template does the issue occur on? Select all that apply.
+      multiple: true
+      options:
+        - Balloons
+        - Bubbles
+        - Bomb the Pirate
+        - Categories
+        - Dungeon Jump
+        - Fishing
+        - Fish Pond
+        - Floor Keyboard
+        - Flowers
+        - Football
+        - Geometrix
+        - Image Chaser
+        - Jewel Packer
+        - Memory
+        - Menu
+        - Music Box
+        - Obstacle Race
+        - Paper Lines
+        - Piano
+        - Poll
+        - Pong
+        - Puzzle
+        - Quiz
+        - RoboTrax
+        - Rubber Ducks
+        - Scratch
+        - Sensory Path
+        - Slides
+        - Stepstone
+        - Storyteller
+        - Theme Cards
+        - The Three Billy Goats Gruff
+        - Trails
+
   - type: input
     id: describe_bug
     attributes:
@@ -73,44 +114,3 @@ body:
         - label: WizeFloor Go
         - label: WizeFloor Ultra
         - label: WizeWall
-
-  - type: dropdown
-    id: game
-    attributes:
-      label: Game
-      description: Which game(s) template does the issue occur on? Select all that apply.
-      multiple: true
-      options:
-        - Balloons
-        - Bubbles
-        - Bomb the Pirate
-        - Categories
-        - Dungeon Jump
-        - Fishing
-        - Fish Pond
-        - Floor Keyboard
-        - Flowers
-        - Football
-        - Geometrix
-        - Image Chaser
-        - Jewel Packer
-        - Memory
-        - Menu
-        - Music Box
-        - Obstacle Race
-        - Paper Lines
-        - Piano
-        - Poll
-        - Pong
-        - Puzzle
-        - Quiz
-        - RoboTrax
-        - Rubber Ducks
-        - Scratch
-        - Sensory Path
-        - Slides
-        - Stepstone
-        - Storyteller
-        - Theme Cards
-        - The Three Billy Goats Gruff
-        - Trails
