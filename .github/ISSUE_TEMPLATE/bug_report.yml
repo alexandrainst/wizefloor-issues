@@ -4,46 +4,40 @@ title: "[BUG] "
 labels: []
 assignees: []
 body:
-  - type: textarea
-    id: describe_bug
+
+  - type: dropdown
+    id: platform
     attributes:
-      label: Describe the bug
-      description: A clear and concise description of what the bug is.
-      placeholder: Describe what happened.
+      label: Platform
+      description: Which platform has the issue been observed on? Select all that apply.
+      multiple: true
+      options:
+        - Web
+        - Windows
+        - Android        
+        - Tracking (ATrack)
     validations:
       required: true
 
-  - type: textarea
-    id: reproduce
+  - type: dropdown
+    id: Installation Type
     attributes:
-      label: To Reproduce
-      description: Steps to reproduce the behavior.
-      placeholder: |
-        1. Go to '...'
-        2. Click on '...'
-        3. Scroll down to '...'
-        4. See error
+      label: Platform
+      description: Which installation type has the issue been observed on? Select all that apply.
+      multiple: true
+      options:
+        - WizeFloor (Ceiling)
+        - WizeFloor Go
+        - WizeFloor Ultra
+        - WizeWall
     validations:
       required: true
-
-  - type: textarea
-    id: expected_behavior
-    attributes:
-      label: Expected behavior
-      description: A clear and concise description of what you expected to happen.
-      placeholder: Describe what you expected to happen.
-
-  - type: textarea
-    id: screenshots
-    attributes:
-      label: Screenshots
-      description: If applicable, add screenshots to help explain the problem.
-
+      
   - type: dropdown
     id: game
     attributes:
       label: Game
-      description: Which game template does the issue occur on? Select all that apply.
+      description: Which game(s) template does the issue occur on? Select all that apply.
       multiple: true
       options:
         - Balloons
@@ -60,6 +54,7 @@ body:
         - Image Chaser
         - Jewel Packer
         - Memory
+        - Menu
         - Music Box
         - Obstacle Race
         - Paper Lines
@@ -78,12 +73,36 @@ body:
         - Theme Cards
         - The Three Billy Goats Gruff
         - Trails
+
+  - type: textarea
+    id: describe_bug
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is.
+      placeholder: Describe what happened.
     validations:
       required: true
 
   - type: textarea
-    id: applies_to
+    id: reproduce
     attributes:
-      label: Applies to
-      description: Which devices, platforms, or modes has the bug been observed on? For example, Windows application.
-      placeholder: Windows application, Chrome, iPad, etc.
+      label: To Reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+        1. 
+        2. 
+    validations:
+      required: true
+
+  - type: input
+    id: expected_behavior
+    attributes:
+      label: Expected behavior
+      description: A clear and concise description of what you expected to happen.
+      placeholder: Describe what you expected to happen.
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain the problem.
