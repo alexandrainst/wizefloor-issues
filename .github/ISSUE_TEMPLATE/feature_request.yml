@@ -1,0 +1,98 @@
+name: Feature request
+description: Suggest an idea for this project
+title: "[FEATURE] "
+labels: ["enhancement"]
+type: "feature"
+assignees: []
+body:
+
+  - type: dropdown
+    id: game
+    attributes:
+      label: Game
+      description: Which game(s) template does the request relate to? Select all that apply. Leave empty if it is not specific to a game.
+      multiple: true
+      options:
+        - Balloons
+        - Bubbles
+        - Bomb the Pirate
+        - Categories
+        - Dungeon Jump
+        - Fishing
+        - Fish Pond
+        - Floor Keyboard
+        - Flowers
+        - Football
+        - Geometrix
+        - Image Chaser
+        - Jewel Packer
+        - Memory
+        - Menu
+        - Music Box
+        - Obstacle Race
+        - Paper Lines
+        - Piano
+        - Poll
+        - Pong
+        - Puzzle
+        - Quiz
+        - RoboTrax
+        - Rubber Ducks
+        - Scratch
+        - Sensory Path
+        - Slides
+        - Stepstone
+        - Storyteller
+        - Theme Cards
+        - The Three Billy Goats Gruff
+        - Trails
+
+  - type: input
+    id: tile_id
+    attributes:
+      label: ID/URL of the related tile
+      description: If the request concerns an existing tile, link it here.
+      placeholder: "e.g.: https://www.wizefloor.com/app/tile?id=51175"
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Is your feature request related to a problem?
+      description: A clear and concise description of what the problem is.
+      placeholder: "e.g.: I'm always frustrated when..."
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Describe the solution you'd like
+      description: A clear and concise description of what you want to happen.
+      placeholder: Describe the behaviour you would like to see.
+
+  - type: checkboxes
+    id: platform
+    attributes:
+      label: Platform
+      description: Which platform(s) should the feature apply to? Select all that apply.
+      options:
+        - label: Windows
+        - label: Android
+        - label: Tracking (ATrack)
+        - label: Tracking (LiDAR)
+        - label: Web
+
+  - type: checkboxes
+    id: installation_type
+    attributes:
+      label: Installation type
+      description: Which installation type(s) should the feature apply to? Select all that apply.
+      options:
+        - label: WizeFloor (Ceiling)
+        - label: WizeFloor Go
+        - label: WizeFloor Ultra
+        - label: WizeWall
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional context
+      description: Add any other context, mockups or screenshots about the feature request here.
