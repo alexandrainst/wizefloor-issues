@@ -50,7 +50,7 @@ body:
     id: tile_id
     attributes:
       label: ID/URL of the problematic tile
-      placeholder: e.g.: https://www.wizefloor.com/app/tile?id=51175
+      placeholder: "e.g.: https://www.wizefloor.com/app/tile?id=51175"
 
   - type: input
     id: describe_bug
