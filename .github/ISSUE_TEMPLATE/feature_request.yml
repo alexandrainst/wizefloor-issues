@@ -45,13 +45,6 @@ body:
         - The Three Billy Goats Gruff
         - Trails
 
-  - type: input
-    id: tile_id
-    attributes:
-      label: ID/URL of the related tile
-      description: If the request concerns an existing tile, link it here.
-      placeholder: "e.g.: https://www.wizefloor.com/app/tile?id=51175"
-
   - type: textarea
     id: problem
     attributes:
